@@ -242,16 +242,16 @@
         async function initMap() {
             let [lng, lat] = points[0];
             await init('allmap', { lng, lat, zoom: 15 });
-            createMarker(map, lat, lng)
             let pts = [];
             for (let i in points) {
             let point = points[i];
+            createMarker(point[1], point[0]);
             pts.push({ lng: point[0], lat: point[1] });
             }
             drawLine(pts)
         }
 
-        const createMarker = (map, lat, lng) => {
+        const createMarker = (lat, lng) => {
         return new google.maps.Marker({
         position:{lat, lng},
         map
