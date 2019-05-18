@@ -208,7 +208,7 @@
         else {
         let script = document.createElement('script');
         script.type = 'text/javascript';
-        script.src = `http://maps.google.cn/maps/api/js?region=tw&language=zh-TW&key=${ak}&callback=initMap`;
+        script.src = `https://maps.google.cn/maps/api/js?region=tw&language=zh-TW&key=${ak}&callback=initMap`;
         document.head.appendChild(script);
         window.initMap = callback;
         }
