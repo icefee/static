@@ -1,5 +1,6 @@
 .right_nr1_nr ul li {
-  height: 250px;
+  height: 160px;
+  padding-top: 15px;
 }
 
 .right_nr1_nr ul li .right_nr1_nr_xl {
@@ -8,9 +9,17 @@
   padding-top: 0;
 }
 
+.right_nr1_nr ul li .title {
+  margin-bottom: 10px;
+}
+
 .right_nr1_nr ul li .title h2 {
   border-left: 3px solid #00747b;
   padding-left: 10px;
+}
+
+.right_nr1_nr_xl h3 {
+  padding-left: 15px;
 }
 
 .right_nr1_nr_xl h3 a {
